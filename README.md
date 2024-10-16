@@ -111,14 +111,14 @@ Each piece of information (time, weather, system stats, GPU info) is updated at 
 ## Running the Application
 Simply run the script using Python:
 ```bash
-python system_monitor_app.py
+python manager.py
 ```
 The widget will appear on your screen, showing system stats, weather, time, and GPU information. You can drag it to any position and close it using the "X" button in the top-right corner.
 
 ## Customization
 - `Change the City`: You can change the default city by typing in the city name in the entry box and clicking "Change City."
 - `Adjusting Update Intervals`: The `after()` methods control how often different parts of the widget update (time, weather, system stats, etc.). These can be adjusted based on your needs.
-- `Window Transparency`: The transparency of the window is set to 85% (self.`window.attributes('-alpha', 0.85))`. You can modify this value if needed.
+- `Window Transparency`: The transparency of the window is set to 85% `(self.window.attributes('-alpha', 0.85))`. You can modify this value if needed.
 
 ## GPU Monitoring (Optional)
 To monitor GPU temperature and usage, you need to have NVIDIA's nvidia-smi tool installed. This tool is typically installed with NVIDIA drivers.
